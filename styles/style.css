@@ -111,10 +111,16 @@ button, p, ul li {
   text-align: center;
 }
 
-.feet__subtitles {
-  font-family: "Parisienne", cursive;
-  font-size: 14px;
+.feet__subtitles, .feet__tagline {
+  font-family: "Parisienne", cursive; /* Misma fuente para ambos */
   margin: 2px 0;
+}
+
+
+
+/* Tamaño de la fuente para el h3, haciendo más grande solo la frase */
+.feet__tagline {
+  font-size: 25px; /* Ajusta este tamaño según lo que necesites */
 }
 
 .feet__nav {
@@ -158,6 +164,8 @@ button, p, ul li {
   padding-bottom: 2px;
   color: #070707;
 }
+
+
 
 /* --------------- ICONOS Y LISTAS --------------- */
 .fa-brands {
@@ -324,3 +332,31 @@ ul li {
 .producto:hover {
   transform: scale(1.1);
 }
+
+
+/* Efecto hover en las imágenes */
+.modal-body img {
+  transition: all 0.3s ease;
+}
+
+.modal-body img:hover {
+  transform: scale(1.1); /* Efecto de aumento */
+}
+.modal-body img {
+  transition: box-shadow 0.3s ease;
+}
+
+.modal-body img:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.modal-body img {
+  transition: transform 0.3s ease;
+}
+
+.modal-body img:hover {
+  transform: scale(0.9);
+}
+.modal-body img {
+  transition: all 0.3s ease;
+}
+
