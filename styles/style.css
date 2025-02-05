@@ -1,0 +1,326 @@
+/* --------------- CONFIGURACIÓN GENERAL --------------- */
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Parisienne&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EEEAE6;
+  overflow-x: hidden;
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+/* Tipografías */
+button, p, ul li {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* --------------- ESTILOS GENERALES DE TEXTO --------------- */
+.subtitlesI {
+  font-family: "Parisienne", cursive;
+  font-size: 35px;
+}
+
+.subtitlesN {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+
+.subtitlesB {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: bold; /* Corregido: 2 → bold */
+}
+
+/* --------------- BOTÓN DE GALERÍA --------------- */
+.btn {
+  background-color: #3E6163;
+  color: #EEEAE6;
+  width: 45%;
+  font-size: 12px;
+  display: block;
+  margin: 0 auto;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #2A2E3E;
+  transform: scale(1.05);
+}
+
+/* --------------- ESTILOS DE NAVEGACIÓN --------------- */
+.nav-tabs {
+  background-color: #3E6163;
+  padding: 0;
+}
+
+.nav-tabs .nav__link {
+  color: #EEEAE6;
+  font-size: 14px;
+  padding: 0;
+}
+
+/* --------------- BANNER --------------- */
+.banner {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 65vh;
+}
+
+.banner.banner-index {
+  background-image: url(../img/banner2-removebg.png);
+  background-color: #c0cbcd;
+}
+
+.banner.banner-sobre {
+  background-image: url(../img/señoraVerde.jpg);
+}
+
+.banner__title {
+  font-family: "Parisienne", cursive;
+  font-size: 50px;
+}
+
+.banner__subtitle {
+  font-family: "Parisienne", cursive;
+  font-size: 25px;
+}
+
+/* --------------- PIE DE PÁGINA (FOOTER) --------------- */
+.feet {
+  background-color: #3E6163;
+  color: #EEEAE6;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.feet__subtitles {
+  font-family: "Parisienne", cursive;
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+.feet__nav {
+  padding: 0;
+  margin: 2px 0;
+  list-style: none;
+}
+
+.feet__nav li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.feet__nav a {
+  color: #EEEAE6; /* Mejor contraste */
+  text-decoration: none;
+  font-size: 12px;
+}
+
+.feet__nav a:hover {
+  color: #c0cbcd; /* Efecto hover más visible */
+}
+
+/* Íconos en el footer */
+.feet__social {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 2px 0;
+}
+
+.feet__social a {
+  color: white;
+  font-size: 16px;
+}
+
+/* Copyright */
+.cr {
+  font-size: 15px;
+  margin: 2px 0;
+  padding-bottom: 2px;
+  color: #070707;
+}
+
+/* --------------- ICONOS Y LISTAS --------------- */
+.fa-brands {
+  padding: 15px;
+  color: #EEEAE6;
+  border-radius: 50%;
+  margin: 15px;
+}
+
+.fa-brands:hover {
+  background-color: #2A2E3E;
+  color: #080808;
+}
+
+ul li {
+  list-style: none;
+  padding: 8px;
+}
+
+/* --------------- SECCIÓN "BIENVENIDO" (INDEX) --------------- */
+.bienvenido {
+  background-color: #fff;
+  font-size: 20px;
+  padding: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* --------------- SECCIONES DE SERVICIOS Y CATÁLOGO --------------- */
+.index-servicios__columna1 {
+  background-color: #7c6cd4;
+}
+
+.index-servicios__columna2, .index-catalogo {
+  background-color: #d9d9d9;
+}
+
+.index-servicios__pic {
+  width: 100px;
+  padding: 2px;
+}
+
+/* --------------- SECCIÓN "BUBBLES" --------------- */
+.bubbles {
+  background-image: url(../img/Bubbles.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 330px;
+  overflow: hidden;
+}
+
+.bubbles .subtitlesBubble {
+  font-family: "Parisienne", cursive;
+  border-radius: 100%;
+  background-color: #3E6163;
+  width: 180px;
+  height: 180px;
+  color: #EEEAE6;
+}
+
+/* --------------- SECCIÓN "SOBRE MÍ" --------------- */
+.sobreMi {
+  padding-block: 30px;
+}
+
+.sobreMi .inner {
+  display: flex;
+  box-shadow: 13px 13px 30px #cccccc;
+}
+
+.sobreMi .inner > div {
+  flex: 1;
+}
+
+.sobreMi .inner .inner__pic img {
+  max-width: 100%;
+  padding: 1.5rem;
+}
+
+.sobreMi .inner .inner__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 3rem;
+}
+
+.sobreMi .inner .inner__text p {
+  font-size: 20px;
+}
+
+/* --------------- MEDIA QUERIES --------------- */
+@media only screen and (min-width: 1000px) {
+  .container {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .container.bienvenido {
+    padding: 10px;
+    height: 50vh;
+  }
+
+  .container .banner__title {
+    font-size: 60px;
+  }
+
+  .container .subtitlesI {
+    font-size: 50px;
+  }
+
+  .container .btn {
+    width: 20%;
+    font-size: 12px;
+  }
+
+  .index-servicios__columna1 {
+    height: 90vh;
+  }
+
+  /* --------------- fotos con movimientos --------------- */
+  .index-servicios__columna1 .index-servicios__pic {
+    width: 170px;
+  }
+
+  .bubbles {
+    height: 90vh;
+  }
+
+  .bubbles .subtitlesBubble {
+    width: 300x;
+    height: 3px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .sobreMi {
+    padding: 1.5rem;
+  }
+
+  .sobreMi .inner {
+    flex-direction: column;
+    font-size: 15px;
+  }
+
+  .sobreMi .inner .inner__text {
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* --------------- EFECTOS Y TRANSICIONES --------------- */
+.index-servicios__pic {
+  transition: all 0.3s ease;
+}
+
+.index-servicios__pic:hover {
+  width: 43%;
+}
+
+.producto {
+  transition: transform 0.3s ease;
+}
+
+.producto:hover {
+  transform: scale(1.1);
+}
